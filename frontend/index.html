@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav__logo"><a href="index.html">TripMate</a></div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="features.html">Features</a></li>
+            <li class="link"><a href="about.html">About Us</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="container__left">
+            <form id="trip-form">
+                <h4>Where do you want to go?</h4>
+                <div class="form__group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination" required autocomplete="off">
+                    <div id="suggestions" class="suggestions"></div>
+                </div>
+                <div class="form__group">
+                    <label for="days">Number of Days</label>
+                    <input type="number" id="days" name="days" placeholder="Enter number of days" min="1" required>
+                </div>
+                <button type="submit">Plan My Trip</button>
+            </form>
+        </div>
+        <div id="itinerary" class="itinerary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
